@@ -1,0 +1,395 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.container h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.container p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.searchBox {
+  display: flex;
+  gap: 12px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #000;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #000;
+  background: #fff;
+}
+
+.searchButton {
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.searchButton:hover {
+  background: #333;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.results {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.results h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.resultCard {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.resultCard:hover {
+  background: #f5f5f5;
+  border-color: #000;
+}
+
+.artistImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.artistInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artistInfo h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+.artistInfo p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 8px 0;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.backButton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.backButton:hover {
+  background: #f5f5f5;
+  border-color: #000;
+}
+
+.albumImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.trackCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.trackCard:hover {
+  background: #f5f5f5;
+}
+
+.trackNumber {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  min-width: 30px;
+}
+
+.trackInfo {
+  flex: 1;
+}
+
+.trackInfo h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 4px 0;
+  color: #000;
+}
+
+.trackInfo p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.playButton {
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.playButton:hover {
+  background: #333;
+}
+
+.songDetails {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.songArtLarge {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.songInfo {
+  flex: 1;
+}
+
+.songInfo h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+.songInfo h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+  color: #666;
+}
+
+.songInfo p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.aiSuggestion {
+  background: #e8f5e9;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.aiSuggestion p {
+  margin: 0;
+  color: #2e7d32;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  .searchInput {
+    background: #1a1a1a;
+    border-color: #333;
+    color: #fff;
+  }
+
+  .searchInput:focus {
+    border-color: #fff;
+  }
+
+  .searchButton {
+    background: #fff;
+    color: #000;
+  }
+
+  .searchButton:hover {
+    background: #e0e0e0;
+  }
+
+  .error {
+    color: #ff6b6b;
+  }
+
+  .resultCard {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .resultCard:hover {
+    background: #2a2a2a;
+    border-color: #fff;
+  }
+
+  .artistInfo h3 {
+    color: #fff;
+  }
+
+  .artistInfo p {
+    color: #ccc;
+  }
+
+  .link {
+    color: #fff;
+  }
+
+    .backButton {
+    border-color: #333;
+    color: #fff;
+  }
+
+  .backButton:hover {
+    background: #2a2a2a;
+    border-color: #fff;
+  }
+
+  .trackCard {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  .trackCard:hover {
+    background: #2a2a2a;
+  }
+
+  .trackNumber {
+    color: #ccc;
+  }
+
+  .trackInfo h3 {
+    color: #fff;
+  }
+
+  .trackInfo p {
+    color: #ccc;
+  }
+
+  .playButton {
+    background: #fff;
+    color: #000;
+  }
+
+  .playButton:hover {
+    background: #e0e0e0;
+  }
+
+    .songDetails {
+    background: #1a1a1a;
+  }
+
+  .songInfo h2 {
+    color: #fff;
+  }
+
+  .songInfo h3 {
+    color: #ccc;
+  }
+
+  .songInfo p {
+    color: #aaa;
+  }
+
+    .aiSuggestion {
+    background: #1b5e20;
+    border-color: #4caf50;
+  }
+
+  .aiSuggestion p {
+    color: #a5d6a7;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
