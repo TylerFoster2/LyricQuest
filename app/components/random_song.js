@@ -16,7 +16,6 @@ export default function RandomSong() {
     try {
       console.log('Getting random song from Gemini...')
       
-      // Step 1: Get random song from Gemini
       const geminiResponse = await fetch('/api/gemini-random', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' }
@@ -29,7 +28,6 @@ export default function RandomSong() {
       const { title, artist } = await geminiResponse.json()
       console.log('Gemini picked:', title, 'by', artist)
 
-      // Step 2: Search for the song on Deezer
       const searchQuery = `${title} ${artist}`
       console.log('Searching Deezer for:', searchQuery)
       

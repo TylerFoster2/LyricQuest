@@ -11,7 +11,6 @@ export async function POST(request) {
 
     console.log('Getting random song suggestion...')
 
-    // Create a unique seed
     const uniqueId = `${Date.now()}-${Math.floor(Math.random() * 999999)}`
 
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {

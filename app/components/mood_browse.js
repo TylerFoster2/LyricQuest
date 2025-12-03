@@ -4,8 +4,8 @@ import { useState } from 'react'
 import styles from './browse.module.css'
 
 const MOODS = [
-  { name: 'Happy', color: '#FFD700', bg: '#FFF9E6'},
-  { name: 'Sad', color: '#4169E1', bg: '#E6F0FF'},
+  { name: 'Happy', color: '#FFD700', bg: '#fdf3d2ff'},
+  { name: 'Sad', color: '#ac67b5ff', bg: '#beacdeff'},
   { name: 'Energetic', color: '#FF4500', bg: '#FFE6E0'},
   { name: 'Chill', color: '#87CEEB', bg: '#F0F8FF'}
 ]
@@ -28,7 +28,6 @@ export default function MoodBrowse() {
     try {
       console.log('Calling /api/gemini-mood...')
       
-      // Step 1: Get song suggestions from Gemini
       const geminiResponse = await fetch('/api/gemini-mood', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -54,9 +53,8 @@ export default function MoodBrowse() {
 
       console.log(`Got ${songs.length} song suggestions from Gemini`)
 
-      // Step 2: Search for each song on Deezer
       const allTracks = []
-      for (const song of songs.slice(0, 10)) { // Get first 10 songs
+      for (const song of songs.slice(0, 10)) { s
         try {
           const searchQuery = `${song.title} ${song.artist}`
           console.log('Searching Deezer for:', searchQuery)
@@ -65,7 +63,7 @@ export default function MoodBrowse() {
           const deezerData = await deezerResponse.json()
           
           if (deezerData.data && deezerData.data.length > 0) {
-            allTracks.push(deezerData.data[0]) // Get best match
+            allTracks.push(deezerData.data[0]) 
             console.log('Found track:', deezerData.data[0].title)
           }
         } catch (err) {
