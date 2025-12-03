@@ -1,3 +1,15 @@
+WEBSITE URL: https://lyric-quest-three.vercel.app/
+
+TYSON PEKOVICH
+TYLER FOSTER
+
+WEB DEVELOPMENT FINAL PROJECT
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
