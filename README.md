@@ -1,4 +1,4 @@
-WEBSITE URL: https://lyric-quest-three.vercel.app/
+WEBSITE URL: https://lyric-quest-dfqf.vercel.app/
 
 TYSON PEKOVICH
 TYLER FOSTER
